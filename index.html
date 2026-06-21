@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Портфолио — Никита Замилацкий · Performance-маркетолог</title>
+<meta name="description" content="Никита Замилацкий — performance-маркетолог и трафик-менеджер. Яндекс Директ, аналитика воронки, медиапланирование и юнит-экономика. Сергиев Посад · удалённо / Москва.">
+<meta name="author" content="Никита Замилацкий">
+<meta name="theme-color" content="#EA3C12">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Никита Замилацкий — Performance-маркетолог">
+<meta property="og:description" content="Помогаю бизнесу привлекать клиентов через платную рекламу: анализ воронки, медиапланирование, Яндекс Директ, юнит-экономика.">
+<meta property="og:locale" content="ru_RU">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23EA3C12'/%3E%3Ctext x='50' y='68' font-family='Arial,sans-serif' font-size='52' font-weight='700' fill='%23fff' text-anchor='middle'%3EНЗ%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#16181D; --paper:#FFFFFF; --soft:#F6F7F9; --tint:#F1F2F5;
+  --muted:#6B7280; --line:#E7E9EE; --accent:#EA3C12; --accent-soft:#FCEAE4;
+  --display:'Space Grotesk',sans-serif; --body:'Inter',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--ink);background:var(--soft);line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:880px;margin:0 auto;padding:0 22px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:16px}
+
+/* header */
+header{padding:54px 0 40px;text-align:center}
+.avatar{width:104px;height:104px;border-radius:50%;margin:0 auto 22px;
+  background:linear-gradient(135deg,#2B2F3A,#3C4150);color:#fff;display:flex;align-items:center;justify-content:center;
+  font-family:var(--display);font-weight:600;font-size:34px;letter-spacing:1px;border:3px solid #fff;box-shadow:0 6px 22px rgba(20,22,29,.14)}
+h1{font-family:var(--display);font-weight:700;font-size:40px;letter-spacing:-.5px;line-height:1.05}
+.role{font-family:var(--display);font-weight:500;font-size:18px;color:var(--accent);margin-top:8px}
+.loc{color:var(--muted);font-size:14px;margin-top:8px}
+.pills{display:flex;flex-wrap:wrap;gap:9px;justify-content:center;margin-top:20px}
+.pill{display:inline-flex;align-items:center;gap:7px;padding:8px 15px;border:1px solid var(--line);border-radius:999px;
+  background:#fff;color:var(--ink);text-decoration:none;font-size:13.5px;font-weight:500;transition:.16s}
+.pill:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-1px)}
+.pill b{color:var(--muted);font-weight:600}
+
+/* sections */
+section{padding:30px 0}
+.eyebrow{font-family:var(--display);font-weight:600;font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+h2{font-family:var(--display);font-weight:600;font-size:24px;letter-spacing:-.3px;margin-bottom:18px}
+.lead{font-size:16.5px;line-height:1.65}
+.lead strong{font-weight:600}
+
+/* skills */
+.skillgroup{padding:18px 20px;border-bottom:1px solid var(--line)}
+.skillgroup:last-child{border-bottom:none}
+.skillgroup .k{font-size:13px;color:var(--muted);font-weight:500;margin-bottom:9px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-size:13px;font-weight:500;padding:6px 12px;border-radius:8px;background:var(--tint);color:var(--ink)}
+
+/* timeline */
+.tl{position:relative;padding-left:26px}
+.tl::before{content:"";position:absolute;left:6px;top:6px;bottom:6px;width:2px;background:var(--line)}
+.tlitem{position:relative;padding:0 0 22px}
+.tlitem:last-child{padding-bottom:0}
+.tlitem::before{content:"";position:absolute;left:-26px;top:5px;width:11px;height:11px;border-radius:50%;background:#fff;border:3px solid var(--accent)}
+.tldate{font-family:var(--display);font-weight:600;font-size:13px;color:var(--muted);margin-bottom:3px}
+.tlrole{font-weight:600;font-size:16px}
+.tlrole span{font-weight:400;color:var(--muted)}
+.tldesc{font-size:14.5px;color:#3a3d45;margin-top:4px}
+
+/* cases */
+.case{padding:26px 26px 24px;margin-bottom:20px}
+.case-tag{display:inline-block;font-size:11.5px;font-weight:600;color:var(--accent);background:var(--accent-soft);padding:4px 10px;border-radius:6px;letter-spacing:.3px}
+.case h3{font-family:var(--display);font-weight:600;font-size:20px;margin:12px 0 4px;letter-spacing:-.2px}
+.case .niche{color:var(--muted);font-size:14px;margin-bottom:18px}
+.metrics{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}
+.metric{flex:1;min-width:120px;background:var(--soft);border-radius:11px;padding:13px 15px}
+.metric .num{font-family:var(--display);font-weight:700;font-size:23px;color:var(--accent);line-height:1.1}
+.metric .lab{font-size:11.5px;color:var(--muted);margin-top:4px;line-height:1.3}
+.row{display:grid;grid-template-columns:104px 1fr;gap:4px 16px;padding:9px 0;border-top:1px solid var(--line);font-size:14.5px}
+.row .rk{font-weight:600;color:var(--ink)}
+.row .rv{color:#3a3d45}
+.row .rv ul{margin:2px 0 0;padding-left:17px}
+.row .rv li{margin:2px 0}
+.caselink{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-weight:600;font-size:14px;color:var(--accent);text-decoration:none}
+.caselink:hover{text-decoration:underline}
+.note{font-size:12.5px;color:var(--muted);font-style:italic;margin-top:14px}
+
+/* cta */
+.cta{text-align:center;padding:40px 26px;margin-top:6px;background:var(--ink);border:none;color:#fff}
+.cta h2{color:#fff}
+.cta p{color:#C9CCD4;max-width:560px;margin:0 auto 22px;font-size:15.5px}
+.ctabtns{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.btn{display:inline-flex;align-items:center;gap:7px;padding:11px 20px;border-radius:999px;text-decoration:none;font-weight:600;font-size:14px;transition:.16s}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{filter:brightness(1.07);transform:translateY(-1px)}
+.btn-ghost{background:transparent;color:#fff;border:1px solid #3a3f4b}
+.btn-ghost:hover{border-color:#fff}
+footer{text-align:center;color:var(--muted);font-size:12.5px;padding:26px 0 40px}
+
+@media(max-width:620px){
+  h1{font-size:32px}
+  .row{grid-template-columns:1fr;gap:2px}
+  .row .rk{color:var(--accent)}
+  .metric{min-width:calc(50% - 5px)}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="avatar" title="место для фото">НЗ</div>
+    <h1>Никита Замилацкий</h1>
+    <div class="role">Performance-маркетолог · трафик-менеджер</div>
+    <div class="loc">Сергиев Посад · удалённо / гибрид / Москва</div>
+    <div class="pills">
+      <a class="pill" href="mailto:LeonardoJunior10@yandex.ru"><b>Email</b> LeonardoJunior10@yandex.ru</a>
+      <a class="pill" href="https://t.me/NickNovan" target="_blank" rel="noopener"><b>Telegram</b> @NickNovan</a>
+      <a class="pill" href="tel:+79774179405"><b>Телефон</b> +7 977 417-94-05</a>
+      <a class="pill" href="https://sergiev-posad.hh.ru/resume/e19290eaff10a5d3f20039ed1f724d6c553130" target="_blank" rel="noopener"><b>Резюме</b> hh.ru</a>
+    </div>
+  </header>
+
+  <section>
+    <div class="eyebrow">О себе</div>
+    <p class="lead">Начинающий performance-маркетолог. Помогаю бизнесу привлекать клиентов через платную рекламу: <strong>анализирую воронку, планирую медиабюджет, настраиваю кампании в Яндекс Директе и считаю экономику до окупаемости</strong>. Сильная сторона — работа с цифрами и аналитика. За плечами опыт в продажах, поэтому понимаю поведение клиента и логику воронки изнутри, а не по учебнику.</p>
+    <p class="lead" style="margin-top:14px;color:#3a3d45">Чем полезен бизнесу: помогу выстроить лидогенерацию, перераспределить бюджет в пользу рентабельных каналов и не сливать деньги на нецелевой трафик.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow">Навыки и инструменты</div>
+    <div class="card">
+      <div class="skillgroup">
+        <div class="k">Реклама</div>
+        <div class="chips"><span class="chip">Яндекс Директ — Поиск</span><span class="chip">РСЯ</span><span class="chip">Ретаргетинг</span><span class="chip">VK Реклама</span></div>
+      </div>
+      <div class="skillgroup">
+        <div class="k">Аналитика и метрики</div>
+        <div class="chips"><span class="chip">Сквозная воронка</span><span class="chip">CTR</span><span class="chip">CPC</span><span class="chip">CPL</span><span class="chip">CPA</span><span class="chip">CAC</span><span class="chip">LTV</span><span class="chip">ROMI</span><span class="chip">ДРР</span><span class="chip">Яндекс Метрика</span><span class="chip">Google Analytics</span></div>
+      </div>
+      <div class="skillgroup">
+        <div class="k">Планирование</div>
+        <div class="chips"><span class="chip">Медиапланирование</span><span class="chip">Юнит-экономика</span><span class="chip">Распределение бюджета</span></div>
+      </div>
+      <div class="skillgroup">
+        <div class="k">Инструменты</div>
+        <div class="chips"><span class="chip">Excel / Google Sheets</span><span class="chip">Wordstat</span><span class="chip">Figma</span><span class="chip">Miro</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">Опыт и образование</div>
+    <div class="tl">
+      <div class="tlitem">
+        <div class="tldate">2025 — настоящее время</div>
+        <div class="tlrole">Яндекс Практикум <span>— проектная деятельность (трафик-менеджер)</span></div>
+        <div class="tldesc">Переподготовка на маркетолога и учебные проекты полного цикла: анализ воронки, медиапланирование, юнит-экономика, настройка кампаний в Яндекс Директе.</div>
+      </div>
+      <div class="tlitem">
+        <div class="tldate">2025</div>
+        <div class="tlrole">Виктория Фитнес <span>— менеджер отдела продаж</span></div>
+        <div class="tldesc">Перевыполнял план продаж на 20%. Считал KPI в Excel (продажи, лиды, конверсия). Предложил систему продления абонементов через личный контакт в зале.</div>
+      </div>
+      <div class="tlitem">
+        <div class="tldate">2024 — 2025</div>
+        <div class="tlrole">Продажи и клиентский сервис <span>— Спортмастер, ДНС, ресторан</span></div>
+        <div class="tldesc">Работа с клиентами и продажи (план +5% в Спортмастере, допродажи в рознице и ресторане). Понимание воронки продаж и поведения покупателя.</div>
+      </div>
+      <div class="tlitem">
+        <div class="tldate">Образование</div>
+        <div class="tlrole">Высшее (неоконч.) — таможенное дело <span>· среднее специальное — юрист</span></div>
+        <div class="tldesc">В процессе получения официальных сертификатов Яндекс Директа и Яндекс Метрики.</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">Кейсы</div>
+    <h2>Кейс 1 — стратегия и медиаплан для детской EdTech-студии</h2>
+    <div class="card case">
+      <span class="case-tag">Учебный (дипломный) проект</span>
+      <h3>«Фа-Сад»</h3>
+      <div class="niche">Онлайн-студия архитектуры и дизайна для детей · EdTech</div>
+
+      <div class="metrics">
+        <div class="metric"><div class="num">1,9%</div><div class="lab">сквозная конверсия на старте</div></div>
+        <div class="metric"><div class="num">~189 ₽</div><div class="lab">лид в Яндекс Директе (ядро)</div></div>
+        <div class="metric"><div class="num">~600 тыс ₽</div><div class="lab">медиабюджет на 12 мес.</div></div>
+        <div class="metric"><div class="num">ROMI +</div><div class="lab">положительная окупаемость (прогноз)</div></div>
+      </div>
+
+      <div class="row"><div class="rk">Контекст</div><div class="rv">Онлайн-студия для детей, ЦА — родители школьников. Нужно спланировать продвижение на год.</div></div>
+      <div class="row"><div class="rk">Точка А</div><div class="rv">Сквозная конверсия 1,9%; ~60% лидов терялись после этапа отправки реквизитов на оплату; каналы работали без приоритета по рентабельности.</div></div>
+      <div class="row"><div class="rk">Цель</div><div class="rv">Выстроить систему лидогенерации, поднять окупаемость и перераспределить бюджет в пользу эффективных каналов.</div></div>
+      <div class="row"><div class="rk">Действия</div><div class="rv"><ul>
+        <li>Проанализировал сквозную воронку (30 000+ визитов), нашёл узкое место</li>
+        <li>Сравнил каналы по CPA и качеству лида → ядро на Яндекс Директ</li>
+        <li>Построил медиаплан на 12 мес. с прогнозом KPI и юнит-экономикой</li>
+        <li>Сместил стратегию в сторону retention и ретаргетинга</li>
+      </ul></div></div>
+      <div class="row"><div class="rk">Точка Б <span style="font-weight:400;color:var(--muted)">(прогноз)</span></div><div class="rv">LTV 15 120 ₽, целевой CPO 1 804 ₽; прогноз 339 продаж и выручки ~5,1 млн ₽ при положительном ROMI.</div></div>
+      <a class="caselink" href="https://docs.google.com/presentation/d/1eRjQlJeTzT-2S7aaX82h5G7UD_jeYozMDW4NXWkYdz8/edit" target="_blank" rel="noopener">→ Смотреть презентацию кейса (дипломный проект)</a>
+      <p class="note">Учебный проект: исторические данные проанализированы; медиаплан, юнит-экономика и прогноз построены самостоятельно.</p>
+    </div>
+
+    <h2 style="margin-top:8px">Кейс 2 — полный цикл запуска кампании в Яндекс Директе</h2>
+    <div class="card case">
+      <span class="case-tag">Учебный проект · настройка в Директе</span>
+      <h3>Робот-пылесос Xiaomi</h3>
+      <div class="niche">E-commerce · Москва · Поиск + РСЯ</div>
+
+      <div class="metrics">
+        <div class="metric"><div class="num">300 000 ₽</div><div class="lab">бюджет в месяц</div></div>
+        <div class="metric"><div class="num">5 000 ₽</div><div class="lab">целевой CPO</div></div>
+        <div class="metric"><div class="num">150 / 60 ₽</div><div class="lab">лимит CPC: Поиск / РСЯ</div></div>
+        <div class="metric"><div class="num">2</div><div class="lab">кампании: Поиск + РСЯ</div></div>
+      </div>
+
+      <div class="row"><div class="rk">Контекст</div><div class="rv">Продвижение робот-пылесоса Xiaomi в Москве через Яндекс Директ.</div></div>
+      <div class="row"><div class="rk">Точка А</div><div class="rv">Запуск с нуля по заданным условиям: бюджет 300 000 ₽/мес, целевой ДРР 20%, лимиты CPC и средний чек 25 000 ₽.</div></div>
+      <div class="row"><div class="rk">Цель</div><div class="rv">Подготовить и настроить кампании на Поиске и в РСЯ, уложившись в целевую экономику.</div></div>
+      <div class="row"><div class="rk">Действия</div><div class="rv"><ul>
+        <li>Рассчитал экономику: бюджет → выручка → заказы → CPO → CPL → CPC</li>
+        <li>Собрал и сгруппировал семантику, проработал минус-слова</li>
+        <li>Составил медиаплан с прогнозом по каналам</li>
+        <li>Настроил кампании (стратегия «Максимум конверсий», лимиты ставок), подготовил объявления</li>
+      </ul></div></div>
+      <div class="row"><div class="rk">Точка Б</div><div class="rv">Настроенные кампании на Поиске и в РСЯ с целевой экономикой (CPO 5 000 ₽, CPL 1 500 ₽, CPC 150/60 ₽) и логикой ставок под выкуп целевого трафика.</div></div>
+      <a class="caselink" href="https://docs.google.com/presentation/d/1gfiItWYZNKf0i-wdnUsx4o1vIneQN0MDnKDhyuQNwXw/edit" target="_blank" rel="noopener">→ Смотреть презентацию кейса (скрины настроек и объявлений)</a>
+      <p class="note">Учебный проект: материалы подготовлены по заданным условиям; кампании настроены в учебном аккаунте.</p>
+    </div>
+  </section>
+
+  <div class="card cta">
+    <h2>Открыт к работе</h2>
+    <p>Ищу позицию junior performance-маркетолога или ассистента команды интернет-рекламы. Готов выполнить тестовое задание и обсудить задачи вашего проекта.</p>
+    <div class="ctabtns">
+      <a class="btn btn-primary" href="mailto:LeonardoJunior10@yandex.ru">Написать на почту</a>
+      <a class="btn btn-ghost" href="https://t.me/NickNovan" target="_blank" rel="noopener">Telegram @NickNovan</a>
+    </div>
+  </div>
+
+  <footer>Никита Замилацкий · Performance-маркетолог · 2026</footer>
+
+</div>
+</body>
+</html>
