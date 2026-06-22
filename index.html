@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Портфолио — Никита Замилацкий · Performance-маркетолог</title>
-<meta name="description" content="Никита Замилацкий — performance-маркетолог и трафик-менеджер. Яндекс Директ, аналитика воронки, медиапланирование и юнит-экономика. Сергиев Посад · удалённо / Москва.">
+<title>Портфолио — Никита Замилацкий · Трафик-менеджер</title>
+<meta name="description" content="Никита Замилацкий — трафик-менеджер. Яндекс Директ, аналитика воронки, медиапланирование и юнит-экономика. Сергиев Посад · удалённо / Москва.">
 <meta name="author" content="Никита Замилацкий">
 <meta name="theme-color" content="#EA3C12">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="Никита Замилацкий — Performance-маркетолог">
+<meta property="og:title" content="Никита Замилацкий — Трафик-менеджер">
 <meta property="og:description" content="Помогаю бизнесу привлекать клиентов через платную рекламу: анализ воронки, медиапланирование, Яндекс Директ, юнит-экономика.">
 <meta property="og:locale" content="ru_RU">
 
@@ -33,16 +33,17 @@ body{font-family:var(--body);color:var(--ink);background:var(--soft);line-height
 
 /* header */
 header{padding:54px 0 40px;text-align:center}
-.avatar{width:104px;height:104px;border-radius:50%;margin:0 auto 22px;
-  background:linear-gradient(135deg,#2B2F3A,#3C4150);color:#fff;display:flex;align-items:center;justify-content:center;
-  font-family:var(--display);font-weight:600;font-size:34px;letter-spacing:1px;border:3px solid #fff;box-shadow:0 6px 22px rgba(20,22,29,.14)}
+.avatar{width:116px;height:116px;border-radius:50%;margin:0 auto 22px;overflow:hidden;
+  border:3px solid #fff;box-shadow:0 6px 22px rgba(20,22,29,.18);background:#2B2F3A}
+.avatar img{width:100%;height:100%;object-fit:cover;display:block}
 h1{font-family:var(--display);font-weight:700;font-size:40px;letter-spacing:-.5px;line-height:1.05}
 .role{font-family:var(--display);font-weight:500;font-size:18px;color:var(--accent);margin-top:8px}
 .loc{color:var(--muted);font-size:14px;margin-top:8px}
 .pills{display:flex;flex-wrap:wrap;gap:9px;justify-content:center;margin-top:20px}
 .pill{display:inline-flex;align-items:center;gap:7px;padding:8px 15px;border:1px solid var(--line);border-radius:999px;
   background:#fff;color:var(--ink);text-decoration:none;font-size:13.5px;font-weight:500;transition:.16s}
-.pill:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-1px)}
+a.pill:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-1px)}
+.pill.static{cursor:default}
 .pill b{color:var(--muted);font-weight:600}
 
 /* sections */
@@ -69,6 +70,8 @@ h2{font-family:var(--display);font-weight:600;font-size:24px;letter-spacing:-.3p
 .tlrole{font-weight:600;font-size:16px}
 .tlrole span{font-weight:400;color:var(--muted)}
 .tldesc{font-size:14.5px;color:#3a3d45;margin-top:4px}
+.tldesc ul{margin:7px 0 0;padding-left:18px}
+.tldesc li{margin:5px 0}
 
 /* cases */
 .case{padding:26px 26px 24px;margin-bottom:20px}
@@ -79,19 +82,25 @@ h2{font-family:var(--display);font-weight:600;font-size:24px;letter-spacing:-.3p
 .metric{flex:1;min-width:120px;background:var(--soft);border-radius:11px;padding:13px 15px}
 .metric .num{font-family:var(--display);font-weight:700;font-size:23px;color:var(--accent);line-height:1.1}
 .metric .lab{font-size:11.5px;color:var(--muted);margin-top:4px;line-height:1.3}
-.row{display:grid;grid-template-columns:104px 1fr;gap:4px 16px;padding:9px 0;border-top:1px solid var(--line);font-size:14.5px}
+.row{display:grid;grid-template-columns:120px 1fr;gap:4px 16px;padding:9px 0;border-top:1px solid var(--line);font-size:14.5px}
 .row .rk{font-weight:600;color:var(--ink)}
 .row .rv{color:#3a3d45}
 .row .rv ul{margin:2px 0 0;padding-left:17px}
 .row .rv li{margin:2px 0}
 .caselink{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-weight:600;font-size:14px;color:var(--accent);text-decoration:none}
 .caselink:hover{text-decoration:underline}
-.note{font-size:12.5px;color:var(--muted);font-style:italic;margin-top:14px}
+.note{font-size:9.5px;color:#d3d6dc;font-style:italic;margin-top:16px;letter-spacing:.1px}
+
+/* education */
+.edu{padding:18px 20px}
+.edu .erole{font-weight:600;font-size:16px}
+.edu .erole span{font-weight:400;color:var(--muted)}
 
 /* cta */
 .cta{text-align:center;padding:40px 26px;margin-top:6px;background:var(--ink);border:none;color:#fff}
 .cta h2{color:#fff}
-.cta p{color:#C9CCD4;max-width:560px;margin:0 auto 22px;font-size:15.5px}
+.cta p{color:#C9CCD4;max-width:560px;margin:0 auto 14px;font-size:15.5px}
+.cta .mail{color:#fff;font-weight:600;margin:0 auto 22px}
 .ctabtns{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
 .btn{display:inline-flex;align-items:center;gap:7px;padding:11px 20px;border-radius:999px;text-decoration:none;font-weight:600;font-size:14px;transition:.16s}
 .btn-primary{background:var(--accent);color:#fff}
@@ -112,21 +121,21 @@ footer{text-align:center;color:var(--muted);font-size:12.5px;padding:26px 0 40px
 <div class="wrap">
 
   <header>
-    <div class="avatar" title="место для фото">НЗ</div>
+    <div class="avatar"><img src="photo.jpg" alt="Никита Замилацкий"></div>
     <h1>Никита Замилацкий</h1>
-    <div class="role">Performance-маркетолог · трафик-менеджер</div>
+    <div class="role">Трафик-менеджер</div>
     <div class="loc">Сергиев Посад · удалённо / гибрид / Москва</div>
     <div class="pills">
-      <a class="pill" href="mailto:LeonardoJunior10@yandex.ru"><b>Email</b> LeonardoJunior10@yandex.ru</a>
+      <span class="pill static"><b>Email</b> LeonardoJunior10@yandex.ru</span>
       <a class="pill" href="https://t.me/NickNovan" target="_blank" rel="noopener"><b>Telegram</b> @NickNovan</a>
-      <a class="pill" href="tel:+79774179405"><b>Телефон</b> +7 977 417-94-05</a>
+      <a class="pill" href="https://zamilatskii.ru" target="_blank" rel="noopener"><b>Сайт</b> zamilatskii.ru</a>
       <a class="pill" href="https://sergiev-posad.hh.ru/resume/e19290eaff10a5d3f20039ed1f724d6c553130" target="_blank" rel="noopener"><b>Резюме</b> hh.ru</a>
     </div>
   </header>
 
   <section>
     <div class="eyebrow">О себе</div>
-    <p class="lead">Начинающий performance-маркетолог. Помогаю бизнесу привлекать клиентов через платную рекламу: <strong>анализирую воронку, планирую медиабюджет, настраиваю кампании в Яндекс Директе и считаю экономику до окупаемости</strong>. Сильная сторона — работа с цифрами и аналитика. За плечами опыт в продажах, поэтому понимаю поведение клиента и логику воронки изнутри, а не по учебнику.</p>
+    <p class="lead">Начинающий трафик-менеджер. Помогаю бизнесу привлекать клиентов через платную рекламу: <strong>анализирую воронку, планирую медиабюджет, настраиваю кампании в Яндекс Директе и считаю экономику до окупаемости</strong>. Сильная сторона — работа с цифрами и аналитика. За плечами опыт в продажах, поэтому понимаю поведение клиента и логику воронки изнутри, а не по учебнику.</p>
     <p class="lead" style="margin-top:14px;color:#3a3d45">Чем полезен бизнесу: помогу выстроить лидогенерацию, перераспределить бюджет в пользу рентабельных каналов и не сливать деньги на нецелевой трафик.</p>
   </section>
 
@@ -153,27 +162,28 @@ footer{text-align:center;color:var(--muted);font-size:12.5px;padding:26px 0 40px
   </section>
 
   <section>
-    <div class="eyebrow">Опыт и образование</div>
+    <div class="eyebrow">Опыт</div>
     <div class="tl">
       <div class="tlitem">
-        <div class="tldate">2025 — настоящее время</div>
+        <div class="tldate">Октябрь 2025 — июнь 2026 · 9 месяцев</div>
         <div class="tlrole">Яндекс Практикум <span>— проектная деятельность (трафик-менеджер)</span></div>
         <div class="tldesc">Переподготовка на маркетолога и учебные проекты полного цикла: анализ воронки, медиапланирование, юнит-экономика, настройка кампаний в Яндекс Директе.</div>
       </div>
       <div class="tlitem">
-        <div class="tldate">2025</div>
+        <div class="tldate">2025 · 7 месяцев</div>
         <div class="tlrole">Виктория Фитнес <span>— менеджер отдела продаж</span></div>
-        <div class="tldesc">Перевыполнял план продаж на 20%. Считал KPI в Excel (продажи, лиды, конверсия). Предложил систему продления абонементов через личный контакт в зале.</div>
+        <div class="tldesc"><ul>
+          <li>Разрабатывал гипотезы и тексты для трудных клиентов и благодаря этому перевыполнял план продаж на 15–20%</li>
+          <li>Предложил способ ловить клиентов с истекающим абонементом прямо в зале и предлагать продление лично — это увеличило проходимость клиентов на 30%</li>
+        </ul></div>
       </div>
       <div class="tlitem">
-        <div class="tldate">2024 — 2025</div>
-        <div class="tlrole">Продажи и клиентский сервис <span>— Спортмастер, ДНС, ресторан</span></div>
-        <div class="tldesc">Работа с клиентами и продажи (план +5% в Спортмастере, допродажи в рознице и ресторане). Понимание воронки продаж и поведения покупателя.</div>
-      </div>
-      <div class="tlitem">
-        <div class="tldate">Образование</div>
-        <div class="tlrole">Высшее (неоконч.) — таможенное дело <span>· среднее специальное — юрист</span></div>
-        <div class="tldesc">В процессе получения официальных сертификатов Яндекс Директа и Яндекс Метрики.</div>
+        <div class="tldate">2024 — 2025 · 4 месяца</div>
+        <div class="tlrole">Спортмастер <span>— продавец-консультант</span></div>
+        <div class="tldesc"><ul>
+          <li>Придумывал гипотезы и продающие описания, благодаря этому стабильно выполнял план, а в продающие месяцы перевыполнял на 10–15%</li>
+          <li>Углубился в изучение кроссовок и благодаря этому продавал на 20% больше кроссовок, чем коллеги</li>
+        </ul></div>
       </div>
     </div>
   </section>
@@ -193,8 +203,8 @@ footer{text-align:center;color:var(--muted);font-size:12.5px;padding:26px 0 40px
         <div class="metric"><div class="num">ROMI +</div><div class="lab">положительная окупаемость (прогноз)</div></div>
       </div>
 
-      <div class="row"><div class="rk">Контекст</div><div class="rv">Онлайн-студия для детей, ЦА — родители школьников. Нужно спланировать продвижение на год.</div></div>
-      <div class="row"><div class="rk">Точка А</div><div class="rv">Сквозная конверсия 1,9%; ~60% лидов терялись после этапа отправки реквизитов на оплату; каналы работали без приоритета по рентабельности.</div></div>
+      <div class="row"><div class="rk">О проекте</div><div class="rv">Онлайн-студия для детей, ЦА — родители школьников. Нужно спланировать продвижение на год.</div></div>
+      <div class="row"><div class="rk">Что было</div><div class="rv">Сквозная конверсия 1,9%; ~60% лидов терялись после этапа отправки реквизитов на оплату; каналы работали без приоритета по рентабельности.</div></div>
       <div class="row"><div class="rk">Цель</div><div class="rv">Выстроить систему лидогенерации, поднять окупаемость и перераспределить бюджет в пользу эффективных каналов.</div></div>
       <div class="row"><div class="rk">Действия</div><div class="rv"><ul>
         <li>Проанализировал сквозную воронку (30 000+ визитов), нашёл узкое место</li>
@@ -202,7 +212,7 @@ footer{text-align:center;color:var(--muted);font-size:12.5px;padding:26px 0 40px
         <li>Построил медиаплан на 12 мес. с прогнозом KPI и юнит-экономикой</li>
         <li>Сместил стратегию в сторону retention и ретаргетинга</li>
       </ul></div></div>
-      <div class="row"><div class="rk">Точка Б <span style="font-weight:400;color:var(--muted)">(прогноз)</span></div><div class="rv">LTV 15 120 ₽, целевой CPO 1 804 ₽; прогноз 339 продаж и выручки ~5,1 млн ₽ при положительном ROMI.</div></div>
+      <div class="row"><div class="rk">Результат <span style="font-weight:400;color:var(--muted)">(прогноз)</span></div><div class="rv">LTV 15 120 ₽, целевой CPO 1 804 ₽; прогноз 339 продаж и выручки ~5,1 млн ₽ при положительном ROMI.</div></div>
       <a class="caselink" href="https://docs.google.com/presentation/d/1eRjQlJeTzT-2S7aaX82h5G7UD_jeYozMDW4NXWkYdz8/edit" target="_blank" rel="noopener">→ Смотреть презентацию кейса (дипломный проект)</a>
       <p class="note">Учебный проект: исторические данные проанализированы; медиаплан, юнит-экономика и прогноз построены самостоятельно.</p>
     </div>
@@ -220,8 +230,8 @@ footer{text-align:center;color:var(--muted);font-size:12.5px;padding:26px 0 40px
         <div class="metric"><div class="num">2</div><div class="lab">кампании: Поиск + РСЯ</div></div>
       </div>
 
-      <div class="row"><div class="rk">Контекст</div><div class="rv">Продвижение робот-пылесоса Xiaomi в Москве через Яндекс Директ.</div></div>
-      <div class="row"><div class="rk">Точка А</div><div class="rv">Запуск с нуля по заданным условиям: бюджет 300 000 ₽/мес, целевой ДРР 20%, лимиты CPC и средний чек 25 000 ₽.</div></div>
+      <div class="row"><div class="rk">О проекте</div><div class="rv">Продвижение робот-пылесоса Xiaomi в Москве через Яндекс Директ.</div></div>
+      <div class="row"><div class="rk">Что было</div><div class="rv">Запуск с нуля по заданным условиям: бюджет 300 000 ₽/мес, целевой ДРР 20%, лимиты CPC и средний чек 25 000 ₽.</div></div>
       <div class="row"><div class="rk">Цель</div><div class="rv">Подготовить и настроить кампании на Поиске и в РСЯ, уложившись в целевую экономику.</div></div>
       <div class="row"><div class="rk">Действия</div><div class="rv"><ul>
         <li>Рассчитал экономику: бюджет → выручка → заказы → CPO → CPL → CPC</li>
@@ -229,22 +239,30 @@ footer{text-align:center;color:var(--muted);font-size:12.5px;padding:26px 0 40px
         <li>Составил медиаплан с прогнозом по каналам</li>
         <li>Настроил кампании (стратегия «Максимум конверсий», лимиты ставок), подготовил объявления</li>
       </ul></div></div>
-      <div class="row"><div class="rk">Точка Б</div><div class="rv">Настроенные кампании на Поиске и в РСЯ с целевой экономикой (CPO 5 000 ₽, CPL 1 500 ₽, CPC 150/60 ₽) и логикой ставок под выкуп целевого трафика.</div></div>
+      <div class="row"><div class="rk">Результат</div><div class="rv">Настроенные кампании на Поиске и в РСЯ с целевой экономикой (CPO 5 000 ₽, CPL 1 500 ₽, CPC 150/60 ₽) и логикой ставок под выкуп целевого трафика.</div></div>
       <a class="caselink" href="https://docs.google.com/presentation/d/1gfiItWYZNKf0i-wdnUsx4o1vIneQN0MDnKDhyuQNwXw/edit" target="_blank" rel="noopener">→ Смотреть презентацию кейса (скрины настроек и объявлений)</a>
       <p class="note">Учебный проект: материалы подготовлены по заданным условиям; кампании настроены в учебном аккаунте.</p>
     </div>
   </section>
 
+  <section>
+    <div class="eyebrow">Образование</div>
+    <div class="card edu">
+      <div class="erole">Высшее (неоконч.) — таможенное дело <span>· среднее специальное — юрист</span></div>
+    </div>
+  </section>
+
   <div class="card cta">
     <h2>Открыт к работе</h2>
-    <p>Ищу позицию junior performance-маркетолога или ассистента команды интернет-рекламы. Готов выполнить тестовое задание и обсудить задачи вашего проекта.</p>
+    <p>Ищу позицию junior трафик-менеджера или ассистента команды интернет-рекламы. Готов выполнить тестовое задание и обсудить задачи вашего проекта.</p>
+    <p class="mail">Почта: LeonardoJunior10@yandex.ru</p>
     <div class="ctabtns">
-      <a class="btn btn-primary" href="mailto:LeonardoJunior10@yandex.ru">Написать на почту</a>
-      <a class="btn btn-ghost" href="https://t.me/NickNovan" target="_blank" rel="noopener">Telegram @NickNovan</a>
+      <a class="btn btn-primary" href="https://t.me/NickNovan" target="_blank" rel="noopener">Telegram @NickNovan</a>
+      <a class="btn btn-ghost" href="https://sergiev-posad.hh.ru/resume/e19290eaff10a5d3f20039ed1f724d6c553130" target="_blank" rel="noopener">Резюме на hh.ru</a>
     </div>
   </div>
 
-  <footer>Никита Замилацкий · Performance-маркетолог · 2026</footer>
+  <footer>Никита Замилацкий · Трафик-менеджер · 2026</footer>
 
 </div>
 </body>
